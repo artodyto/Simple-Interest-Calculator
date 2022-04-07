@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="container">
+        <div class="simple-calculator-wrapper">
+            <!-- SELECT CURRENCY -->
+            <label for="currency">Select Currency:</label>
+            <div></div>
+            <select name="currency" id="currency_dropdown" class="currency_dropdown">
+            </select>
+
+            <!-- PRINCIPAL AMOUNT -->
+            <label for="principal_input">Principal Amount:</label>
+            <label class="currency">$</label>
+            <div class="amount_container">
+                <input name="principal_input" type="number" value="" id="principal_input" />
+                <button id="clear_principal_input" class="clear_button">x</button>
+            </div>
+
+            <!-- ANNUAL INTEREST RATE -->
+            <label for="annual_interest_input">Annual Interest Rate:</label>
+            <div></div>
+            <div class="annual_interest">
+                <input name="annual_interest" type="number" value="" id="annual_interest_input" />
+                <label>% per year</label>
+            </div>
+
+            <!-- PERIOD RATE -->
+            <label for="period_input">Period:</label>
+            <div></div>
+            <div class="period">
+                <div>
+                    <input name="period_input" type="number" value="" id="period_input" />
+                    <select name="period_dropdown" id="period_dropdown" >
+                        <option value="days">Days</option>
+                        <option value="weeks">Weeks</option>
+                        <option value="months">Months</option>
+                        <option value="quarters">Quarters</option>
+                        <option selected value="years">Years</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="button" class="button" value="Calculate" name="calculate" id="calculate_interest" />
+                    <input type="button" class="button" value="Clear" name="clear" id="clear_interest" />
+                </div>
+            </div>
+
+            <!-- INTEREST AMOUNT -->
+            <label for="interest_input">Interest Amount:</label>
+            <label class="currency">$</label>
+            <div class="amount_container">
+                <input name="interest_input" type="text" value="" id="interest_input" disabled="true" />
+            </div>
+
+            <!-- TOTAL AMOUNT -->
+            <label for="total_amount_input">Total Amount:</label>
+            <label class="currency">$</label>
+            <div class="amount_container">
+                <input name="total_amount_input" type="text" value="" id="total_amount_input" disabled="true" />
+            </div>
+        </div>
+    </main>
+</body>
+</html>

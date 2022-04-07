@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("");
+}
+
+label {
+  font-size: 1rem;
+}
+
+input {
+  width: 150px;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.simple-calculator-wrapper {
+  display: grid;
+  grid-template-columns: auto 25px auto;
+  background-color: #e8e8e8;
+  border: 1px #ddd solid;
+  border-radius: 10px;
+  padding: 30px 30px;
+  width: 550px;
+  gap: 10px;
+}
+
+.currency_dropdown {
+  width: 45%;
+  padding: 5px;
+}
+
+.currency {
+  display: flex;
+  font-size: 0.8rem;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 114px;
+  margin-top: 10px;
+}
