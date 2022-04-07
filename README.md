@@ -1,7 +1,7 @@
-# simple interest calculator
+## Simple Interest Calculator
 
 This calculator was based on https://www.rapidtables.com/calc/finance/simple-interest-calculator.html
 
-[demo](https://artodyto.github.io/Simple-Interest-Calculator/)
+-[demo site](https://artodyto.github.io/simple-interest-calculator/)
 
 Feel free to clone and modify for your assignments.
