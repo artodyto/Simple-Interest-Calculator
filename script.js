@@ -134,6 +134,10 @@ const calculateInterest = (principal_amount, rate, year) => {
   return;
 };
 
-const addCommasToNumber = (x) => {
-  return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+const addCommasToNumber = (n) => {
+  var parts = n.toString().split(".");
+  return (
+    parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") +
+    (parts[1] ? "." + parts[1] : "")
+  );
 };
